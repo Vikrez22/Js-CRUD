@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontawesome quick add/css/all.min.css">
+    <title>CRUD BASICS</title> 
+</head>
+<body>
+    <h1>Social Media App</h1>
+    <div class="container">
+    <div class="Left">
+        <form id="form">
+            <label for="">Write your post here</label>
+            <br><br>
+            <textarea name="" id="input" cols="30" rows="10"></textarea>
+            <br><br>
+            <div id="msg"></div>
+            <button type="submit">Post</button>
+        </form>
+    </div>
+    <div class="Right">
+        <h3>Your posts here</h3>
+        <div id="posts">
+            <div>
+                <p>Post 1</p>
+                <span class="options">
+                    <i onClick="editPost(this)"><i class="fa-solid fa-pen-to-square"></i></i>
+                    <i onClick="deletePost(this)"><i class="fa-solid fa-trash"></i></i>
+                </span>
+            </div>
+            <div>
+                <p>Post 2</p>
+                <span class="options">
+                    <i onClick="editPost(this)"><i class="fa-solid fa-pen-to-square"></i></i>
+                    <i onClick="deletePost(this)"><i class="fa-solid fa-trash"></i></i>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/main.js"></script>
+</html>
